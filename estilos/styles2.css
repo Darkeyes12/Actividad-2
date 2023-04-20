@@ -1,0 +1,210 @@
+
+body {
+    background-color: rgb(57, 57, 57);
+    text-align: center;
+}
+
+.borde{
+    border-style: solid;
+    border-color: white;
+    margin: 10px 25px;
+    width: auto;
+    background-color: rgb(158, 158, 158);
+}
+
+h1{
+    color: rgb(0, 234, 255);
+}
+
+h2{
+    color:rgb(0, 0, 0) ;
+}
+
+
+.contenedor1{
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    margin: 25px 25px 80px 25px;
+    background-color: rgb(158, 158, 158);
+    padding: 10px;
+}
+.item1{
+    background-color: gray;
+    width: 500px;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+}
+
+.contenedor2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px 25px 80px 25px;
+    background-color: rgb(158, 158, 158);
+    padding: 10px;
+}
+.item2 {
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+}
+
+.contenedor3{
+    display: grid;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item3 {
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+    grid-column: 2 / span 3;
+}
+
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+}
+
+.item4 {
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+    grid-row-start: 2;
+}
+
+.contenedor5 {
+    display: grid;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+    grid-template-columns: max-content;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+.item5:nth-child(1){
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+    grid-area: header;
+    height: 70px;
+}
+.item5:nth-child(2){
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+    grid-area: main;
+    height: 70px;
+}
+.item5:nth-child(3){
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+    grid-area: sidebar;
+    height: 70px;
+}
+.item5:nth-child(4){
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+    grid-area: footer;
+}
+
+.contenedor6{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 200px;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+  }
+  
+.item6{
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+.contenedor7 {
+    display: grid;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+
+}
+.item7 {
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+}
+
+
+.contenedor8 {
+    display: grid;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 80px;
+}
+
+.item8 {
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+}
+
+.contenedor9 {
+    display: grid;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 40%;
+    row-gap: 50px;
+}
+
+.item9 {
+    background-color: gray;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+}
+
+.contenedor10 {
+    display: grid;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    padding: 10px;
+    justify-items: end;
+}
+.item10 {
+    background-color: gray;
+    width: 800px;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(0, 255, 30);
+}

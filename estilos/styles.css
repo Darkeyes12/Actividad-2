@@ -1,0 +1,243 @@
+body{
+    background-color: rgb(57, 57, 57);
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 234, 255);
+}
+
+h2{
+    color:rgb(0, 0, 0) ;
+}
+
+.borde{
+    border-style: solid;
+    border-color: white;
+    margin: 10px 25px;
+    width: auto;
+    background-color: rgb(158, 158, 158);
+}
+
+.container1{
+    display: flex;
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+  }
+  
+.item1{
+    flex-grow: 1;
+    height: 100px;
+    line-height: 100px;
+    background-color: gray;
+    border-style: solid;
+    border-color: aqua;
+    margin: 40px;
+    text-align: center;
+
+  }
+
+  .item1:first-child{
+    flex-grow: 2;
+  }
+  
+  .item1:nth-child(3){
+    flex-grow: 8;
+  }
+
+
+  .container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 25px 25px 80px 25px;
+  }
+  
+  .item2{
+    width: 51%;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 2%;
+    background-color: gray;
+    border-style: solid;
+    border-color: aqua;
+  }
+  
+  .item2:nth-child(3) {
+    width: 100%;
+  }
+
+  .container3 {
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item3 {
+    line-height: 100px;
+    background-color: gray;
+    border-style: solid;
+    border-color: aqua;
+    margin-top: 10px;
+    flex: 0 32%;
+    margin-bottom: 2%;
+  }
+
+.container4 {
+    background-color: rgb(158, 158, 158);
+    margin: 25px 25px 80px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.item4 {
+  line-height: 40px;
+  background-color: gray;
+  border-style: solid;
+  border-color: aqua;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.item4:nth-child(1){
+  width: 10%;
+}
+.item4:nth-child(2){
+  width: 50%;
+}
+.item4:nth-child(3){
+  width: 30%;
+}
+.item4:nth-child(4){
+  width: 70%;
+}
+
+.container5 {
+  height: 300px;
+  background-color: rgb(158, 158, 158);
+  margin: 25px 25px 80px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.item5 {
+  background-color: gray;
+  border-style: solid;
+  border-color: aqua;
+  border-width: 3px;
+  margin-bottom: 10px;
+  width: 14%;
+}
+
+.item5:nth-child(1){
+  height: 10%;
+  line-height: 0px;
+}
+.item5:nth-child(2){
+  height: 20%;
+}
+.item5:nth-child(3){
+  height: 30%;
+  line-height: 50px;
+}
+.item5:nth-child(4){
+  height: 40%;
+  line-height: 80px;
+}
+
+.container6{
+  background-color: rgb(158, 158, 158);
+  margin: 25px 25px 80px 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.item6 {
+  line-height: 60px;
+  background-color: gray;
+  border-style: solid;
+  border-color: aqua;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+
+.container7{
+  background-color: rgb(158, 158, 158);
+  margin: 25px 25px 80px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item7 {
+  line-height: 0px;
+  background-color: gray;
+  border-style: solid;
+  border-color: aqua;
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container8{
+  background-color: rgb(158, 158, 158);
+  margin: 25px 25px 80px 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item8 {
+  line-height: 60px;
+  background-color: gray;
+  border-style: solid;
+  border-color: aqua;
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+}
+
+.container9{
+  background-color: rgb(158, 158, 158);
+  height: 200px;
+  margin: 25px 25px 80px 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.item9{
+  background-color: gray;
+  border-style: solid;
+  border-color: aqua;
+  margin: 10px;
+  width: 100px;
+}
+
+.item9:nth-child(1){
+  align-self: stretch;
+}
+.item9:nth-child(2){
+  align-self: flex-end;
+}
+.item9:nth-child(4){
+  align-self: center;
+}
+
+.container10{
+  background-color: rgb(158, 158, 158);
+  margin: 25px 25px 80px 25px;
+  display: flex;
+  align-items: center;
+}
+.item10{
+  line-height: 60px;
+  background-color: gray;
+  border-style: solid;
+  border-color: aqua;
+  border-radius: 5px;
+  border-width: 3px;
+  flex-grow: 1;
+  height: 100px;
+  margin: 10px;
+}
